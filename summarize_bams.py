@@ -58,7 +58,7 @@ def summarize_bam_sites(infile, chromosome_position_list):
     samfile = pysam.AlignmentFile(infile, "rb" )
     data = []
     for chrom_pos in chromosome_position_list:
-        chromosome, position = chrom_pos.split()
+        chromosome, position, *extra = chrom_pos.split()
         position = int(position)
         id = infile.split("/")[-1].replace(".bam", "").replace(".cram", "").replace(".sam", "").replace(".sorted", "")
         data_row = make_bam_data(id, samfile, chromosome, position)
