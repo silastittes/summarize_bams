@@ -25,9 +25,9 @@ Note: bam files must be indexed.
 
 # Output
 ```
-ID      chromosome      position        balance count   depth   base    base_qual       mapping_qual    duplicate       paired  proper  rc      secondary      supplementary    unmapped        qc_fail read1   read2
-example chr1    36      1.0     1       2       T       27      20      False   True    True    False   False   False   False   False   True    False
-example chr1    36      1.0     1       2       T       27      40      False   True    True    False   False   False   False   False   True    False
+ID       chromosome  position  balance  count  depth  base  base_qual  mapping_qual  duplicate  paired  proper  rc     secondary  supplementary  unmapped  qc_fail  read1  read2
+example  chr1        36        1.0      1      2      T     27         20            False      True    True    False  False      False          False     False    True   False
+example  chr1        36        1.0      1      2      T     27         40            False      True    True    False  False      False          False     False    True   False
 ```
 
 Hopefully this output is self-explanatory. Goal is to output as much information as possible about the sites in the chromosome_position_file in a way that is easy to parse and analyze.
