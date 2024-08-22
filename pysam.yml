@@ -1,0 +1,25 @@
+#conda env
+name: pysam
+
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python
+  - pysam
+  - samtools
+  - bcftools
+  - htslib
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - jupyter
+  - jupyterlab
+  - ipykernel
+  - ipywidgets
+  - pytest
+  - pytest-cov
+
