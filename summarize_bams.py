@@ -30,7 +30,7 @@ class Alleles:
         self.allele_counts = allele_counts
         
     def allele_balance(self):
-        balance = np.max(self.allele_counts[1])/np.sum(self.allele_counts[1])
+        balance = np.min(self.allele_counts[1])/np.sum(self.allele_counts[1])
         return balance
 
     def allele_count(self):
@@ -139,6 +139,6 @@ if __name__ == "__main__":
 class TestClass:
     def test_allele_class(self):
         aa = Alleles(["A", "a", "t", "g", "c"])
-        assert aa.allele_balance() == 0.4
+        assert aa.allele_balance() == 0.2
         assert aa.allele_count() == 4
         aa.depth() == 5
